@@ -217,10 +217,14 @@ const hr = document.createElement("hr");
 hr.className = "hr-top";
 document.body.appendChild(hr);
 
-// Ota cosa
+// Filtros
 
 const main = document.createElement("main");
 document.body.appendChild(main);
+
+const hrSecond = document.createElement("hr");
+hrSecond.className = "hr-top";
+document.body.appendChild(hrSecond);
 
 const filterSection = document.createElement("section");
 filterSection.className = "filters";

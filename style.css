@@ -168,6 +168,7 @@ header {
   gap: 1.5em;
   max-width: 97.5em;
   margin: auto;
+  margin-top: 1.5em;
 }
 
 .ofertas {
@@ -368,6 +369,30 @@ footer ul:last-child {
   height: 8.125em;
 }
 
+.filtros {
+  display: flex;
+  flex-direction: row;
+  max-width: 100em;
+  margin: auto;
+  justify-content: right;
+  gap: 2em;
+  list-style: none;
+  margin-top: 0.75em;
+  font-size: 14px;
+}
+
+.filtros li {
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  transition: border 0.5s ease;
+}
+
+.filtros li:hover {
+  border: transparent;
+}
+
 @media (max-width: 640px) {
   header {
     max-width: 100%;
@@ -464,6 +489,14 @@ footer ul:last-child {
 
   .footer-lastchild .apple {
     margin-bottom: 2em;
+  }
+
+  .filtros {
+    display: none;
+  }
+
+  .hr-top:nth-of-type(2) {
+    display: none;
   }
 }
 
@@ -569,6 +602,30 @@ footer ul:last-child {
   .footer-lastchild .apple {
     margin-bottom: 2em;
   }
+
+  .filtros {
+    max-width: 50em;
+    margin: auto;
+    justify-content: right;
+    gap: 1em;
+    list-style: none;
+    margin-top: 0.75em;
+    font-size: 14px;
+    margin-bottom: 0.75em;
+  }
+
+  .filtros li {
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius: 0.25em;
+    padding: 0.5em 1em;
+    transition: border 0.5s ease;
+    height: 2.5em;
+  }
+
+  .filtros li:not(:nth-child(-n + 5)) {
+    display: none;
+  }
 }
 
 @media (min-width: 1001px) and (max-width: 1600px) {
@@ -635,5 +692,10 @@ footer ul:last-child {
   .generalDiv {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.2em;
+  }
+
+  .filtros {
+    margin-bottom: 0.75em;
+    margin-right: 2.5em;
   }
 }
